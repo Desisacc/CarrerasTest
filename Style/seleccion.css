@@ -11,6 +11,10 @@
     border-width: 2px;
 }
 
+.seleccion:hover {
+    cursor: pointer;
+}
+
 .contenedorSeleccion {
     display: inline-block;
     padding: 5px;
