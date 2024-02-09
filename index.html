@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style/body.css">
+    <link rel="stylesheet" href="Style/tarjeta.css">
+    <link rel="stylesheet" href="Style/seleccion.css">
+    <link rel="stylesheet" href="Style/resultados.css">
+
+    <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+    <script src="jquery.csv.min.js"></script>
+    <script src="functionality.js" defer></script>
+</head>
+<body>
+    <div style="background-color: rgb(182, 182, 182);">
+        <hr style="margin: 0px; padding: 0px;">
+        <hr style="padding-top: 20px; margin-bottom: 0px; margin-top: 0px;">
+
+        <h1 style="text-align: center; padding-top: 0px; font-weight: 600;">Buscador de experiencias profesionales</h1>
+
+        <div style="text-align: center; padding-bottom: 20px;">
+            <form id="myForm", onsubmit="return false">
+                <div class="contenedorSeleccion">
+                    <label for="listaCiudad" class="seleccionLabel">Ciudad:</label> 
+                    <select name="listaCiudad" id="listaCiudad" class="seleccion">
+                        <option value="TODAS">TODAS</option>
+                        <option value="Guadalajara">Guadalajara</option> 
+                        <option value="Monterrey">Monterrey</option> 
+                        <option value="Ciudad de Mexico">Ciudad de Mexico</option> 
+                    </select>
+                </div>
+            
+                <div class="contenedorSeleccion">
+                    <label for="listaCarrera" class="seleccionLabel">Carrera:</label> 
+                    <select name="listaCarrera" id="listaCarrera" class="seleccion"> 
+                        <option value="TODAS">TODAS</option>
+                        <option value="ITC">ITC</option>
+                        <option value="IRS">IRS</option> 
+                        <option value="IDS">IDS</option> 
+                    </select>
+                </div>
+
+                <br><br>
+                <button type="submit">Mostrar</button>
+            </form>
+        </div>
+
+        <hr style="margin: 0px; padding: 0px;">
+        <hr style="padding-bottom: 20px; margin-bottom: 0px; margin-top: 0px">        
+    </div>
+
+    <div style="text-align: center;">
+        <div class="resultadoContenedor">
+            <hr class="resultadoLinea">
+            <h2 class="resultadoTexto">Resultados</h2>
+            <hr class="resultadoLinea">
+        </div>
+        
+        <ul style="list-style-type: none;">
+            <li name="tarjeta" id="1">
+                <span name="empresa" class="hiddenSpan">Oracle</span>
+                <div class="tarjeta">
+                    <img src="Img/Oracle_Logo.jpg" alt="Oracle Logo" class="imagenTarjeta">
+                    
+                    <div class="contenedorTarjeta">
+                      <h4>Oracle</h4>
+                      <p>Empresa de desarrollo de software</p>
+                    </div>
+                </div>
+            </li>
+
+            <li name="tarjeta" id="2">
+                <span name="empresa" class="hiddenSpan">Bancomer</span>
+                <div class="tarjeta">
+                    <img src="Img/Bancomer_Logo.png" alt="Bancomer Logo" class="imagenTarjeta">
+                    
+                    <div class="contenedorTarjeta">
+                      <h4>Bancomer</h4>
+                      <p>Es un banco</p>
+                    </div>
+                </div>
+            </li>
+
+            <li name="tarjeta" id="3">
+                <span name="empresa" class="hiddenSpan">IBM</span>
+                <div class="tarjeta">
+                    <img src="Img/IBM_LOGO.png" alt="IBM Logo" class="imagenTarjeta">
+                    
+                    <div class="contenedorTarjeta">
+                      <h4>IBM</h4>
+                      <p>Es algo</p>
+                    </div>
+                </div>
+            </li>
+
+            <li name="tarjeta" id="4">
+                <span name="empresa" class="hiddenSpan">Carnitas Chucky</span>
+                <div class="tarjeta">
+                    <img src="Img/CarnitasChucky_Logo.png" alt="Carnitas Chucky Logo" class="imagenTarjeta">
+                    
+                    <div class="contenedorTarjeta">
+                      <h4>Carnitas Chucky</h4>
+                      <p>Que rico</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

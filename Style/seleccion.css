@@ -1,0 +1,21 @@
+.seleccion {
+    text-align: center;
+
+    background-color: gray;
+    color: white;
+    
+    font-family: 'Montserrat';
+    font-weight: 500;
+
+    border-color: rgb(116, 116, 116);
+    border-width: 2px;
+}
+
+.contenedorSeleccion {
+    display: inline-block;
+    padding: 5px;
+}
+
+.seleccionLabel {
+    font-weight: 500;
+}

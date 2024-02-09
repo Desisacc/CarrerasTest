@@ -1,0 +1,46 @@
+.tarjeta {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+
+    width: 200px;
+    height: 250px;
+
+    vertical-align: bottom;
+
+    border-radius: 20px;
+
+    background-color: white;
+}
+
+/* On mouse-over, add a deeper shadow */
+.tarjeta:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+/* Add some padding inside the card container */
+.contenedorTarjeta {
+    border-top: 2px solid black;
+
+    padding: 2px 16px;
+    text-align: center;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.imagenTarjeta {
+    width: 100%;
+    height: 25%;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hiddenSpan {
+    display: none;
+}
+
+li {
+    display: inline-block;
+    margin: 8px;
+    vertical-align: top;
+}

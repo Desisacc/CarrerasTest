@@ -1,0 +1,17 @@
+.resultadoContenedor {
+    padding-top: 20px; 
+}
+
+.resultadoTexto {
+    margin: 0px; 
+    
+    text-align: center; 
+    font-weight: 500;
+}
+
+.resultadoLinea {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    width: 50%
+}
